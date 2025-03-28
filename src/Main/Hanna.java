@@ -44,6 +44,15 @@ public class Hanna {
         });
         hannaFrame.add(generatePoulesButton);
 
+        //Generate game schedule
+        JButton generateWedstrijdSchema = new JButton("Genereer wedstrijd schema");
+        generateWedstrijdSchema.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                generateGameSchedule();
+            }
+        });
+        hannaFrame.add(generateWedstrijdSchema);
+
         // Dropdown for Sport Selection
         String[] sports = {"Voetbal", "Basketbal", "Volleybal", "Hockey"};
         JComboBox<String> sportDropdown = new JComboBox<>(sports);
@@ -86,6 +95,10 @@ public class Hanna {
         JOptionPane.showMessageDialog(null, "Poules gegenereerd!");
     }
 
+    // Function to generate wedstrijd schema
+    private static void generateGameSchedule() {
+        JOptionPane.showMessageDialog(null, "Poules gegenereerd!");
+    }
     // Function to enter available fields
     private static void enterAvailableFields() {
         String input = JOptionPane.showInputDialog("Voer het aantal beschikbare velden in:");

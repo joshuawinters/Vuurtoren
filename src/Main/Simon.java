@@ -39,12 +39,12 @@ public class Simon {
         leftPanel.add(pouleBPanel);
 
         // Center - Table with matches
-        String[] columnNames = {"Poule", "Team 1", "Team 2", "Scheidsrechter", "Uitslag", "Confirm"};
+        String[] columnNames = {"Poule", "Team 1", "Team 2", "Scheidsrechter", "Uitslag", "Veld"};
         Object[][] pouleData = {
-                {"Poule A", "Team Alpha", "Team Bravo", "Scheids 1", "0 - 0", "Voer in"},
-                {"Poule A", "Team Charlie", "Team Delta", "Scheids 2", "0 - 0", "Voer in"},
-                {"Poule B", "Team Echo", "Team Foxtrot", "Scheids 3", "0 - 0", "Voer in"},
-                {"Poule B", "Team Golf", "Team Hotel", "Scheids 4", "0 - 0", "Voer in"}
+                {"Poule A", "Team Alpha", "Team Bravo", "Scheids 1", "0 - 0", "1"},
+                {"Poule A", "Team Charlie", "Team Delta", "Scheids 2", "0 - 0", "2"},
+                {"Poule B", "Team Echo", "Team Foxtrot", "Scheids 3", "0 - 0", "3"},
+                {"Poule B", "Team Golf", "Team Hotel", "Scheids 4", "0 - 0", "4"}
         };
 
         DefaultTableModel tableModel = new DefaultTableModel(pouleData, columnNames);
